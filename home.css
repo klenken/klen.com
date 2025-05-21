@@ -1,0 +1,149 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(background.avif);
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.navbar{
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(179, 209, 248);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    z-index: 1000;
+    transition: background 2s ;
+    animation: typing 4s ;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{
+        opacity: 1 ;
+         width: 0px;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+ .logo{
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: azure;
+    text-decoration: none;
+    display: flex;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo a:hover{
+            color: #b1e5f7; 
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(249, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.nav-links a:hover{
+    color: blue;
+ }
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: appear 6s;
+    margin-right: 50%;
+    white-space: nowrap;
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    
+
+  }
+  to{
+    opacity: 1;
+  }
+}
+header h1 p {
+    color: black;
+
+}
+button{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: khaki;
+    color: rgb(13, 3, 104);
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+
+   
+    
+    
+
+.pic{
+    position: absolute;
+    text-align: center;
+    right:400px;
+   bottom: 375px ;
+    width: 300px;
+    border-radius: 23%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 10px rgb(107, 137, 194);
+    animation: appear 2s ;
+}
+
+@keyframes appear {
+    from{
+      opacity: 0;
+     
+  
+    }
+    to{
+      opacity: 1;
+      
+    }
+}
+
+ .back{
+    background-size: contain;
+    width: 100%;
+    height: 500px;
+    background-image: url(./background.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+

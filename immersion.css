@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    image-resolution: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+     background-image: url(./green.avif);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar{
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    z-index: 1000;
+    transition: background 2s ;
+    animation: typing 2s forwards;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{
+        opacity: 0 ;
+         width: 0px;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+ .logo{
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo a:hover{
+            color: #b1e5f7; 
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(38, 80, 42);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.nav-links a:hover{
+    color: yellowgreen;
+ }
+ .back{
+    float: left;
+    position:fixed;
+    border-radius: 20px;
+    margin-right: 95%;
+    box-sizing: content-box;
+    background-color: rgb(72, 192, 67);
+    padding: 10px;
+    margin-top: 3%;
+    animation: typing 1s forwards;
+    overflow: hidden;
+}    
+@keyframes typing{
+    from{
+        opacity: 0 ;
+        
+        }
+        to{
+            opacity: 1;
+           
+                }}
+
+.back a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.back:hover{
+    background-color: cadetblue;
+    
+}
+.deer{
+    margin-left:76% ;
+    float: right;
+    margin-top: 1% ;
+    margin-right: 20%;
+}
+
+
+.pig{
+    float:left ;
+    margin-left: 10%;
+   margin-top:20% ;
+    float: left;
+}
+
+#h{
+    height: 350px;
+    width: 350px;
+}
+
+.frog{
+    margin-top: 13%;
+    float: right;
+    margin-right: 7%;
+}
