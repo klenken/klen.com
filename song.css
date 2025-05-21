@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(song\ background.jfif);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar{
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(125, 100, 237);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    z-index: 1000;
+    transition: background 2s ;
+    animation: typing 2s forwards;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{
+        opacity: 0 ;
+         width: 0px;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+ .logo{
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: azure;
+    text-decoration: none;
+    display: flex;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo a:hover{
+            color: #b1e5f7; 
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(249, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.nav-links a:hover{
+    color: blue;
+ }
+ 
+ .f2024{
+    
+    justify-content: center;
+   font-size: larger;
+   
+   padding: 100px;
+   
+ 
+     border-style: collapse;
+    box-sizing: content-box;
+    
+   
+ }
+
+ table {
+    
+    border-collapse:collapse;
+    border-radius: 10%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation:floatUp 3s;
+    
+ }
+ @keyframes floatUp{
+    from{
+        opacity: 1;
+       transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        translate: translateY(0px);
+    }
+ }
+.f2024 table th{
+    padding: 100px;
+}
+.f2024 table td{
+   
+    cursor: pointer;
+    padding: 100PX;
+   
+}
+.back{
+    position:fixed;
+    border-radius: 20px;
+    margin-right: 95%;
+    box-sizing: content-box;
+    background-color: cornflowerblue;
+    padding: 10px;
+    margin-top: 3%;
+    animation: typing 1s forwards;
+    overflow: hidden;
+}    
+@keyframes typing{
+    from{
+        opacity: 0 ;
+        
+        }
+        to{
+            opacity: 1;
+           
+                }}
+
+.back a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.back:hover{
+    background-color: cadetblue;
+    
+}
+#tibo{
+
+    width: 250px;
+   height: 200px;
+   animation: forwards 3s;
+   overflow: hidden;
+   white-space: nowrap;
+}
+@keyframes forwards{
+      from{
+        opacity: 0;
+        transform: translateX(100px);
+      }
+      to{
+        opacity: 1;
+        transform: translateX(0px);
+      }
+}
+.blue{
+    animation: forwards 1.5s;
+    overflow: hidden;
+    white-space: nowrap;
+} 
+@keyframes forwards {
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+#h{
+    width: 250px;
+   height: 200px;
+}
+.sing{
+  
+    border-radius: 5%;
+    margin-right: 45%;
+    margin-left: 50%;
+    margin-top: 5%;
+    padding: 2px;
+    background-color: #d1529c;
+    animation:appear 2s;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+       
+        }}
+.sing:hover{
+    background-color: rgb(134, 92, 161);
+}
+.sing a:hover{
+    color: rgb(231, 40, 40);
+}
+.sing a{
+   
+    text-decoration: none;
+}

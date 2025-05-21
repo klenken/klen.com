@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(background.avif);
+}
+
+.navbar{
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(179, 209, 248);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    z-index: 1000;
+    transition: background 2s ;
+    animation: typing 3s ease-in-out;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{
+        opacity: 1 ;
+         width: 0px;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+ .logo{
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: azure;
+    text-decoration: none;
+    display: flex;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo a:hover{
+            color: #b1e5f7; 
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(249, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.nav-links a:hover{
+    color: blue;
+ }
+ .back{
+    float: none;
+    position:fixed;
+    border-radius: 20px;
+    margin-right: 95%;
+    box-sizing: content-box;
+    background-color: cornflowerblue;
+    padding: 10px;
+    margin-top: 3%;
+    animation: appear 1s ;
+    overflow: hidden;
+}    
+@keyframes typing{
+    from{
+        opacity: 0 ;
+        
+        }
+        to{
+            opacity: 1;
+           
+                }}
+
+.back a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.back:hover{
+    background-color: cadetblue;
+    
+}
+.edu{
+    margin-top: 10%;
+    float: right;
+    margin-right: 25%;
+    animation: floatUp 2s;
+}
+@keyframes floatUp{
+    from{
+        opacity: 1;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+#snhs{
+    width:200px;
+    height: 200px;
+}
+#ses{
+    width: 200px;
+    height: 200px;
+   
+}
+.A{
+    background-color: rgb(255, 255, 255);
+    border-collapse: collapse;
+    margin-bottom: 20%;
+    
+}
+.B{
+    background-color: rgb(255, 255, 255);
+  border-collapse:collapse ;
+}
+
+.all{
+    float: left;
+    margin-top: 10%;
+    margin-left: 15% ;
+   white-space: nowrap;
+
+ animation: typing 3s ease-in-out;
+ overflow: hidden;
+}
+
+@keyframes typing{
+from{
+    opacity: 1 ;
+     width: 0px;
+}
+to{
+    opacity: 1;
+    width: 12%;
+}
+}
+
+
+.age{
+    padding: 30px;
+}
+.sex{
+    padding: 30px;
+}
+.bday{
+    padding: 30px;
+}
+.status{
+    padding: 30px;
+}
+.citezenship{
+    padding: 30px;
+}

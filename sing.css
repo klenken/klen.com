@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    image-resolution: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(./sky.avif);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar{
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    z-index: 1000;
+    transition: background 2s ;
+    animation: typing 2s forwards;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{
+        opacity: 0 ;
+         width: 0px;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+ .logo{
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(33, 122, 173);
+    text-decoration: none;
+    display: flex;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo a:hover{
+            color: #009fd4; 
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(69, 116, 187);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.nav-links a:hover{
+    color: rgb(196, 196, 250);
+ }
+ .back{
+    float: none;
+    position:fixed;
+    border-radius: 20px;
+    margin-right: 95%;
+    box-sizing: content-box;
+    background-color: cornflowerblue;
+    padding: 10px;
+    margin-top: 3%;
+    animation: typing 1s forwards;
+    overflow: hidden;
+}    
+@keyframes typing{
+    from{
+        opacity: 0 ;
+        
+        }
+        to{
+            opacity: 1;
+           
+                }}
+
+.back a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.back:hover{
+    background-color: cadetblue;
+    
+}
+.description{
+    border-radius: 5%;
+    box-shadow: 0px 0px 50px white, 0px 0px 100px white;
+    background-color: #9fd8eb;
+    padding: 25px;
+    margin-right:35% ;
+    float: right;
+    margin-top: 15%;
+}
+.portal{
+    border-radius: 9px;
+    background-color: rgb(78, 116, 173);
+    padding: 10px;
+    float: left;
+    margin-top:2%;
+    margin-left: 42%;
+    margin-right: 15%;
+}
+
+.portal a{
+    font-size: 19px;
+    text-decoration: none;
+    color: white;
+}
+.portal:hover{
+    background-color: white;
+}
+.portal a:hover{
+    color:rgb(78, 116, 173);
+}
+.all{
+    animation:floatUp 2s;
+
+}
+@keyframes floatUp{
+    from{
+    opacity: 0;
+    transform:translateY(100px);
+}
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
